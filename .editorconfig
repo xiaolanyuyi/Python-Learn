@@ -1,0 +1,32 @@
+# EditorConfig — https://editorconfig.org
+# Keeps editors in sync with the repository's LF policy defined in .gitattributes.
+# Requires an EditorConfig plugin in the editor (built into VS Code / PyCharm).
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Python
+[*.{py,pyi}]
+indent_size = 4
+
+# Data / config / docs
+[*.{json,yml,yaml,toml,ini,cfg,md}]
+indent_size = 2
+
+# Markdown often relies on trailing spaces for line breaks
+[*.md]
+trim_trailing_whitespace = false
+
+# Windows-only scripts must keep CRLF (mirrors .gitattributes)
+[*.{bat,cmd}]
+end_of_line = crlf
+
+# Makefiles require tabs
+[Makefile]
+indent_style = tab
