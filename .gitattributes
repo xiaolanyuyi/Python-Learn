@@ -1,0 +1,23 @@
+# Enforce consistent line endings across the repository AND the working tree.
+# `text=auto`  : let Git detect text vs. binary automatically.
+# `eol=lf`     : check text files out with LF on every platform.
+# See https://git-scm.com/docs/gitattributes#_end_of_line_conversion
+* text=auto eol=lf
+
+# Windows-only scripts must keep CRLF to execute correctly.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files: never touch their contents.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.gz   binary
+*.exe  binary
+*.dll  binary
+*.so   binary
+*.dylib binary
