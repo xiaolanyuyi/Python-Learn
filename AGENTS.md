@@ -30,7 +30,7 @@ uv lock --upgrade    # 升级并重新锁定依赖
 ## 目录结构
 
 - `main.py` —— 入口脚本。
-- `Learn Function.py` —— 练习用脚本。
+- `lesson1.py` —— 练习用脚本。
 - `.venv/`、`.idea/` —— 本地产物，**不要提交**。
 
 ## 版本管理
