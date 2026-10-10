@@ -1,8 +1,8 @@
 import requests
+import lesson1
 
 def main():
-    r = requests.get("https://api.github.com", timeout=10)
-    print("status:", r.status_code)
+    lesson1.lesson1()
 
 if __name__ == "__main__":
     main()
